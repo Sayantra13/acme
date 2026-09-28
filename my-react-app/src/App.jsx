@@ -1,6 +1,5 @@
-import './App.css'
 import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import Header from './header/header.jsx'
 import Hero from './hero/hero.jsx'
 import Bestseller from './bestseller/Bestseller.jsx'
@@ -16,9 +15,7 @@ import Footer from './footer/Footer.jsx';
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header />} />
-      </Routes>
+    <Header/>
         <Hero />
         <Bestseller />
         <Story/>

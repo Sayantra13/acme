@@ -1,14 +1,13 @@
-import '../App.css'
-import '../index.css'
+
 
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFE500] text-[#3f3f00]">
+    <footer className="bg-[var(--footer-bg)] text-[var(--footer-text-color)]">
       <div className="w-[90%] mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-black font-bold text-sm mb-5">QUICK LINKS</h3>
+            <h3 className="text-black !font-bold text-sm mb-5">QUICK LINKS</h3>
             <div className="space-y-2 text-sm">
               <a href="#" className="block hover:underline"> About </a>
               <a href="#" className="block hover:underline"> Contact us </a>
@@ -20,7 +19,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-black font-bold text-sm mb-5">TRENDING CATEGORIES</h3>
+            <h3 className="text-black !font-bold text-sm mb-5">TRENDING CATEGORIES</h3>
 
             <div className="space-y-2 text-sm">
               <a href="#" className="block hover:underline"> Nutri Noodles </a>
@@ -34,25 +33,25 @@ export default function Footer() {
 
 
           <div>
-            <h3 className="text-black font-bold text-sm mb-5">MAIL US</h3>
+            <h3 className="text-black !font-bold text-sm mb-5">MAIL US</h3>
             <p className="text-sm mb-5"> greentech.foods@acme.in </p>
-            <h3 className="text-black font-bold text-sm mb-3"> CALL US </h3>
+            <h3 className="text-black !font-bold text-sm mb-3"> CALL US </h3>
             <p className="text-sm leading-4"> +91 858807805 <br /> ACME Poshan (Division of Acme Group), <br /> Plot No. 152, Sector 44, Gurugram - 122002, <br /> Haryana, India <br /> Monday - Saturday, 10 AM to 6 PM (IST) </p>
           </div>
 
 
           <div className="bg-[#F2D900] p-6">
-            <h3 className="text-black font-bold text-sm mb-4">
+            <h3 className="text-black !font-bold text-sm mb-4">
               Subscribe
             </h3>
             <div className="flex w-full">
               <input type="email" placeholder="Email address" className="w-full min-w-0 p-3 bg-white text-xs outline-none rounded-l-md"/>
-              <button className="w-12 bg-[#4285F4] text-white flex items-center justify-center rounded-r-md cursor-pointer">→</button>
+              <button className="w-12 bg-[#4285F4] text-white flex items-center justify-center rounded-r-md">→</button>
             </div>
             <p className="text-xs mt-6 mb-3">Also available on</p>
-            <div className="flex items-center gap-4 text-xs font-bold">
-              <img className='w-10 cursor-pointer' src='/basic_commercial_Homepage/footer/amazon.png'/>
-              <img className='w-10 cursor-pointer' src='/basic_commercial_Homepage/footer/flipcart.png'/>
+            <div className="flex items-center gap-4 text-xs !font-bold">
+              <img className='w-10 cursor-pointer' src='/acme/footer/amazon.png'/>
+              <img className='w-10 cursor-pointer' src='/acme/footer/flipcart.png'/>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ export default function Footer() {
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             
-              <img className='w-[30%] lg:w-[10%]' src='/basic_commercial_Homepage/header/logo.png'/>
+              <img className='w-[30%] lg:w-[10%]' src='/acme/header/logo.png'/>
 
             <div className="flex gap-7 text-xs text-black">
               <a href="#" className="hover:underline">Terms</a>
@@ -72,9 +71,9 @@ export default function Footer() {
 
 
             <div className="flex items-center gap-3">
-              <img className='w-10 cursor-pointer' src='/basic_commercial_Homepage/footer/Linkedin.png'/>
-              <img className='w-10 cursor-pointer' src='/basic_commercial_Homepage/footer/Facebook.png'/>
-              <img className='w-10 cursor-pointer' src='/basic_commercial_Homepage/footer/Twitter.png'/>
+              <img className='w-10 cursor-pointer' src='/acme/footer/Linkedin.png'/>
+              <img className='w-10 cursor-pointer' src='/acme/footer/Facebook.png'/>
+              <img className='w-10 cursor-pointer' src='/acme/footer/Twitter.png'/>
             </div>
           </div>
         </div>

@@ -45,24 +45,24 @@ const settings = {
 
   return (
     <div className="bg-[#D4075F] relative py-10 mt-30">
-      <h2 className="text-center text-white font-black text-4xl sm:text-5xl lg:text-6xl leading-none block max-w-2xl mx-auto mb-12">Straight from the<br />snack obsessed</h2>
+      <h2 className="text-center text-white !font-black text-4xl sm:text-5xl lg:text-6xl leading-none block max-w-2xl mx-auto mb-12">Straight from the<br />snack obsessed</h2>
       <div className="container mx-auto">
         <div className="lg:flex justify-between hidden mx-auto max-w-[700px] my-6">
-          <button onClick={() => sliderRef.current?.slickPrev()} className="z-10 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-black text-white flex items-center justify-center text-2xl font-bold cursor-pointer">←</button>
-          <button onClick={() => sliderRef.current?.slickNext()} className="z-10 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-black text-white flex items-center justify-center text-2xl font-bold cursor-pointer">→</button>
+          <button onClick={() => sliderRef.current?.slickPrev()} className="z-10 w-9 h-9 sm:w-12 sm:h-12 rounded-full text-black bg-white flex items-center justify-center text-2xl font-bold ">{"<"}</button>
+          <button onClick={() => sliderRef.current?.slickNext()} className="z-10 w-9 h-9 sm:w-12 sm:h-12 rounded-full text-black bg-white flex items-center justify-center text-2xl font-bold ">{">"}</button>
         </div>
 
-        <div className="px-4">
+        <div className="p-4">
           <Slider ref={sliderRef} {...settings}>
             {list.map((item, index) => (
               <div key={index} className="px-6 sm:px-8 lg:px-15">
-                <div className="h-[380px] sm:h-[400px] lg:h-[450px] border border-white rounded-2xl flex flex-col items-center justify-center text-center px-5 sm:px-8">
+                <div className="h-[380px] sm:h-[400px] lg:h-[500px] border border-white rounded-2xl flex flex-col items-center justify-center text-center px-5 sm:px-8">
                   <div className="flex my-5">
-                    <img src="/basic_commercial_Homepage/review/star.png" className="w-24 sm:w-28 lg:w-30" />
+                    <img src="/acme/review/star.png" className="w-24 sm:w-28 lg:w-30" />
                   </div>
                   <div className="w-20 h-20 rounded-full bg-gray-200 my-5"></div>
-                  <p className="text-white text-[11px] sm:text-sm lg:text-base leading-tight font-semibold my-4">"{item.text}"</p>
-                  <h3 className="text-white md:text-sm font-bold">{item.name}</h3>
+                  <p className="text-white text-[11px] sm:text-sm lg:text-base leading-tight !font-semibold my-4">"{item.text}"</p>
+                  <h3 className="text-white md:text-sm !font-bold">{item.name}</h3>
                 </div>
               </div>
             ))}

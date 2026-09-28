@@ -7,5 +7,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base: '/basic_commercial_Homepage/',
+  base: '/acme/',
 })

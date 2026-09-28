@@ -1,5 +1,4 @@
-import '../App.css'
-import '../index.css'
+
 import { useState } from 'react'
 
 export default function Question(){
@@ -24,23 +23,23 @@ export default function Question(){
   return(
     <>
     <div className="py-20 w-[90%] lg:w-[70%] mx-auto">
-      <div className='text-[#680C34] text-4xl font-black text-center '>Frequently Ask Questions</div>
-      <div className='text-[#680C34] text-2xl font-medium text-center '>Real answers, no junk</div>
+      <h3 className='text-[var(--text-color)] text-4xl !font-black text-center '>Frequently Ask Questions</h3>
+      <h3 className='text-[var(--text-color)] text-2xl !font-medium text-center '>Real answers, no junk</h3>
       <div className="block lg:grid grid-cols-2 gap-10 lg:py-20 items-start">
 
         <div className="grid gap-6 my-6 lg:my-0">
         {list1.map((list)=>{
           const openid = open === list.id;
           return(
-          <div key={list.id} className="w-full min-h-[100px] grid items-center bg-[#F99C01] p-6 rounded cursor-pointer transition-all duration-300" onClick={()=>active(list.id)}> 
+          <div key={list.id} className="w-full min-h-[125px] py-2 grid items-center bg-[#F99C01] px-6 rounded cursor-pointer transition-all duration-300" onClick={()=>active(list.id)}> 
           <div className="flex w-full justify-between gap-6 mb-4 align-center items-center">
-          <span className='text-white font-semibold text-l '>{list.question}</span>
-          <span className='text-white font-semibold text-l '>{openid? '▲' : '▼'}</span>
+          <span className='text-white !font-semibold text-l '>{list.question}</span>
+          <span className='text-white !font-semibold text-l '>{openid? '▲' : '▼'}</span>
           </div>
           {openid && (
-              <span className='text-white font-normal text-l w-[90%] block duration-300'>
+              <p className='text-white text-l w-[90%] block duration-300'>
                 {list.ans}
-              </span>
+              </p>
           )}
           </div>
         )})}
@@ -51,15 +50,15 @@ export default function Question(){
         {list2.map((list)=>{
           const openid = open === list.id;
           return(
-          <div key={list.id} className="w-full min-h-[100px] grid items-center bg-[#F99C01] p-6 rounded cursor-pointer transition-all duration-300" onClick={()=>active(list.id)}> 
+          <div key={list.id} className="w-full min-h-[125px] py-2 grid items-center bg-[#F99C01] px-6 rounded cursor-pointer transition-all duration-300" onClick={()=>active(list.id)}> 
           <div className="flex w-full justify-between gap-6 mb-4 items-center">
-          <span className='text-white font-semibold text-l '>{list.question}</span>
-          <span className='text-white font-semibold text-l '>{openid? '▲' : '▼'}</span>
+          <span className='text-white !font-semibold text-l '>{list.question}</span>
+          <span className='text-white !font-semibold text-l '>{openid? '▲' : '▼'}</span>
           </div>
           {openid && (
-              <span className='text-white font-normal text-l w-[90%] block duration-300'>
+              <p className='text-white text-l w-[90%] block duration-300'>
                 {list.ans}
-              </span>
+              </p>
           )}
           </div>
         )})}
